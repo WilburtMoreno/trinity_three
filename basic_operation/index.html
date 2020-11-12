@@ -9,10 +9,12 @@
 </head>
 <body>
     <div class="container">
-        <h3>Solve the following problem</h3>
-        <div id="scoreboard">
-             <label for="score">score</label>
+        <h3 class="header">Solve the following problem</h3>
+        <div class="scoreboard" id="scoreboard">
+             <h3 class="label-score">score: </h3>
              <h3 id="score">0</h3>
+             <p>/</p>
+             <input type="text" id="limit-score" value="10" >
         </div>
        
         <div class="problem">
@@ -21,7 +23,7 @@
             <h3 id="num2">0</h3>
         </div>
         
-        <input type="text" id="solve-it" placeholder="Solve it">
+        <input type="text" id="solve-it" placeholder="Answer">
     </div>
 </body>
 </html>

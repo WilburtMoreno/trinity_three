@@ -9,11 +9,85 @@ body {
     height: 100vh;
     margin: 0;
 }
+h3 {
+    margin: 0;
+}
+input {
+    background-color: rgb(155, 155, 155);
+    border: none;
+    color: #fff;
+    width: 50px;
+    padding: 10px 5px;
+}
+input:hover {
+    background-color: rgba(155, 155, 155, 0.5);
+}
 .container {
     display: flex;
     flex-direction: column;
     background-color: #888;
     padding: 20px;
     border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+}
+.container .header {
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+.container .scoreboard {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.scoreboard .h3 {
+    font-size: 10px;
+    margin: 0;
+}
+.scoreboard .label-score{
+    margin-right: 10px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+.scoreboard #score {
+    margin-right: 10px;
+    align-self: center;
+}
+.scoreboard p {
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 0 10px 0 0;
+}
+.scoreboard input {
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.scoreboard input:active {
+    border: 2px #fff solid;
+}
+.scoreboard input:focus {
+    border: 2px #fff solid; 
     
+}
+.container .problem{
+    display: inline-flex;
+    
+}
+.container .problem {
+    padding: 20px;
+    display: flex;
+    font-size: 3rem;
+    align-content: center;
+    justify-content: center;
+}
+.problem h3{
+    margin-right: 10px;
+}
+#solve-it {
+    width: 25%;
+    padding: 15px 5px;
+    text-align: center;
 }
