@@ -45,6 +45,8 @@ function calcOperation(operand, operator, operation) {
     }
    
 }
+
+// 
 function problem() {
     operand.innerText = randOperand;
     operator.innerText = randOperator;
