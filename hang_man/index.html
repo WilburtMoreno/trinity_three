@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hang Man</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <svg height="250" width="200" class="figure-container">
+
+            <!-- rod -->
+            <line x1="60" x2="150" y1="20" y2="20"/>
+            <line x1="147" x2="147" y1="20" y2="60"/> 
+            <line x1="60" x2="60" y1="20" y2="250"/>
+            <line x1="20" x2="100" y1="250" y2="250"/>   
+            
+            <!-- head -->
+            <circle cx="147" cy="76" r="15" class="corpse"/>
+            <!-- body -->
+            <line x1="147" x2="147" y1="92" y2="140" class="corpse"/>
+            <!-- arms    -->
+            <line x1="147" x2="136" y1="99" y2="130" class="corpse"/>
+            <line x1="147" x2="157" y1="99" y2="130" class="corpse"/> 
+            <!-- legs      -->
+            <line x1="147" x2="141" y1="140" y2="190" class="corpse"/>
+            <line x1="147" x2="155" y1="140" y2="190" class="corpse"/>      
+        </svg>
+
+        <div class="wrong-letters">
+            <span>w, d, f, g</span>
+         </div>
+
+        <div class="words-container" id="words-container">
+            <div class="letter">h</div>
+            <div class="letter">a</div>
+            <div class="letter">n</div>
+            <div class="letter">g</div>
+            <div class="letter">m</div>
+            <div class="letter">a</div>
+            <div class="letter">n</div>
+        </div>
+     </div> <!-- container end -->
+     <div class="notification-container" id="notification-container">
+         <p>You have already entered this letter</p>
+     </div>
+     <div class="popup-container" id="popup-container">
+         <h3 id="popup-message">You win!</h3>
+         <button id="pop-button">play Again</button>
+     </div>
+</body>
+</html>
