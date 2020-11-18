@@ -16,6 +16,7 @@ body {
     background-color: rgb(0, 90, 117);
     text-align: center;
     height: 50%;
+    min-width: 625px;
     position: relative;
 }
 .container .figure-container {
@@ -26,7 +27,7 @@ body {
     margin: 20px 30px;
 }
 .figure-container .corpse {
-    display: block;
+    display: none;
 }
 .container .wrong-letters{
     color: red;
@@ -50,4 +51,8 @@ body {
     display: inline;
     margin: 5px 10px;
     padding: 10px 20px;
+}
+.container .notification-container {
+    background-color:  rgb(1, 76, 99);
+    padding: 10px;
 }
